@@ -1,18 +1,19 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     var banner = '/**\n    @name: <%= pkg.name %> \n    @version: <%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) \n    @author: <%= pkg.author %> \n    @url: <%= pkg.homepage %> \n    @license: <%= pkg.license %>\n*/\n';
 
     var files = [
-        'src/aping-wikipedia-directive.js',
-        'node_modules/angular-github-api-factory/src/angular-wikipedia-api-factory.js'
-    ];
+                    'src/aping-wikipedia-directive.js',
+                    'src/aping-wikipedia-helper.js',
+                    'node_modules/angular-wikipedia-api-factory/src/angular-wikipedia-api-factory.js'
+                ];
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             js: {
-                files: {
-                    'dist/aping-plugin-wikipedia.min.js': files
+                files : {
+                    'dist/aping-plugin-wikipedia.min.js' : files
                 }
             },
             options: {
@@ -25,8 +26,8 @@ module.exports = function (grunt) {
                 banner: banner,
             },
             dist: {
-                files: {
-                    'dist/aping-plugin-wikipedia.js': files
+                files : {
+                    'dist/aping-plugin-wikipedia.js' : files
                 }
             },
         },
