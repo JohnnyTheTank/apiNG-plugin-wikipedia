@@ -1,0 +1,28 @@
+{
+  "name": "apiNG-plugin-wikipedia",
+  "homepage": "https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia",
+  "authors": [
+    "Jonathan Hornung <jonathan.hornung@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "description": "wikipedia plugin for apiNG",
+  "main": "dist/aping-plugin-wikipedia.js",
+  "moduleType": [],
+  "keywords": [
+    "aping",
+    "wikipedia",
+    "angularjs",
+    "json"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "apiNG": "*"
+  }
+}

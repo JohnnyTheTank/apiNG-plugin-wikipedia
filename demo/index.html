@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>apiNG Wikipedia Demo</title>
+
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/apiNG/dist/aping.min.js"></script>
+    <script src="aping-config.js"></script>
+    <script src="app.js"></script>
+    <script src="../src/aping-wikipedia-directive.js"></script>
+</head>
+<body ng-app="app">
+
+    <aping
+            template-url="template.html"
+            model="native"
+            aping-wikipedia="[{'key':'value'}]">
+    </aping>
+
+
+
+</body>
+</html>

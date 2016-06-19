@@ -1,0 +1,36 @@
+{
+  "name": "aping-plugin-wikipedia",
+  "version": "0.1.0",
+  "description": "wikipedia plugin for apiNG",
+  "main": "dist/aping-plugin-wikipedia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia.git"
+  },
+  "keywords": [
+    "aping",
+    "wikipedia",
+    "angularjs",
+    "json",
+    "angular"
+  ],
+  "author": "Jonathan Hornung <jonathan.hornung@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia/issues"
+  },
+  "homepage": "https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "angular-wikipedia-api-factory": "*"
+  },
+  "dependencies": {
+    "aping": "*"
+  }
+}
