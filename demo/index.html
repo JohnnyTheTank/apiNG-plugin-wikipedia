@@ -12,9 +12,23 @@
 <body ng-app="app">
     <aping template-url="template.html"
            model="social"
-           items="20"
-           get-native-data="false"
-           aping-wikipedia="[{'search':'Jonathan', 'language':'de'}]">
+           aping-wikipedia="[{'title':'Association football'}]">
+    </aping>
+
+    <hr>
+
+    <aping template-url="template.html"
+           model="social"
+           items="3"
+           aping-wikipedia="[{'search':'Transfer', 'language':'de'}]">
+    </aping>
+
+    <hr>
+
+    <aping template-url="template.html"
+           model="social"
+           items="3"
+           aping-wikipedia="[{'search':'Fußball', 'textSearch':'true', 'language':'de'}]">
     </aping>
 </body>
 </html>

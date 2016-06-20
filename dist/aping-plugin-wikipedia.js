@@ -1,6 +1,6 @@
 /**
     @name: aping-plugin-wikipedia 
-    @version: 0.1.0 (19-06-2016) 
+    @version: 0.5.0 (20-06-2016) 
     @author: Jonathan Hornung 
     @url: https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia 
     @license: MIT
@@ -64,23 +64,37 @@ angular.module("jtt_aping_wikipedia", ['jtt_wikipedia'])
                         requestObject.gsrlimit = 500;
                     }
 
-                    if (angular.isDefined(request.search)) {
-                        requestObject.term = request.search;
-                    }
-
                     if (angular.isDefined(request.language)) {
                         requestObject.lang = request.language;
                     }
 
+                    if (angular.isDefined(request.title)) {
+                        requestObject.term = request.title;
+                        wikipediaFactory.getArticle(requestObject)
+                            .then(function (_data) {
+                                if (_data) {
+                                    apingController.concatToResults(apingWikipediaHelper.getObjectByJsonData(_data, helperObject));
+                                }
+                            });
+                    } else if (angular.isDefined(request.search)) {
+                        requestObject.term = request.search;
 
-
-                    //get _data for each request
-                    wikipediaFactory.searchArticlesByTitle(requestObject)
-                        .then(function (_data) {
-                            if (_data) {
-                                apingController.concatToResults(apingWikipediaHelper.getObjectByJsonData(_data, helperObject));
-                            }
-                        });
+                        if (angular.isDefined(request.textSearch) && (request.textSearch === 'true' || request.textSearch === true)) {
+                            wikipediaFactory.searchArticles(requestObject)
+                                .then(function (_data) {
+                                    if (_data) {
+                                        apingController.concatToResults(apingWikipediaHelper.getObjectByJsonData(_data, helperObject));
+                                    }
+                                });
+                        } else {
+                            wikipediaFactory.searchArticlesByTitle(requestObject)
+                                .then(function (_data) {
+                                    if (_data) {
+                                        apingController.concatToResults(apingWikipediaHelper.getObjectByJsonData(_data, helperObject));
+                                    }
+                                });
+                        }
+                    }
                 });
             }
         }
