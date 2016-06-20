@@ -84,7 +84,7 @@ Supported apiNG models
 ### II. Requests
 Every **apiNG plugin** expects an array of **requests** as html attribute.
 
-#### Get single Article by Name
+#### Get Article by Name
 |  parameter  | sample | default | description | optional |
 |----------|---------|---------|---------|---------|
 | **`title`** | `Association football` |  | Existing wikipedia page | no |
