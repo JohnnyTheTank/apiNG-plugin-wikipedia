@@ -1,17 +1,11 @@
 /**
     @name: aping-plugin-wikipedia 
-    @version: 0.5.0 (20-06-2016) 
+    @version: 0.5.0 (22-06-2016) 
     @author: Jonathan Hornung 
     @url: https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia 
     @license: MIT
 */
 "use strict";
-
-/**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia
- @licence MIT
- */
 
 angular.module("jtt_aping_wikipedia", ['jtt_wikipedia'])
     .directive('apingWikipedia', ['apingWikipediaHelper', 'apingUtilityHelper', 'wikipediaFactory', function (apingWikipediaHelper, apingUtilityHelper, wikipediaFactory) {
@@ -99,12 +93,6 @@ angular.module("jtt_aping_wikipedia", ['jtt_wikipedia'])
             }
         }
     }]);;"use strict";
-
-/**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia
- @licence MIT
- */
 
 angular.module("jtt_aping_wikipedia")
     .service('apingWikipediaHelper', ['apingModels', 'apingTimeHelper', 'apingUtilityHelper', function (apingModels, apingTimeHelper, apingUtilityHelper) {

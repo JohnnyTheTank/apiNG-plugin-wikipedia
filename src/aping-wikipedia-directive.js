@@ -1,11 +1,5 @@
 "use strict";
 
-/**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/apiNG-plugin-wikipedia
- @licence MIT
- */
-
 angular.module("jtt_aping_wikipedia", ['jtt_wikipedia'])
     .directive('apingWikipedia', ['apingWikipediaHelper', 'apingUtilityHelper', 'wikipediaFactory', function (apingWikipediaHelper, apingUtilityHelper, wikipediaFactory) {
         return {
