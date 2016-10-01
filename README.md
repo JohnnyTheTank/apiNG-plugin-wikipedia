@@ -2,8 +2,8 @@
 ![apiNG][logo]
 
 [![Join the chat at https://gitter.im/JohnnyTheTank/apiNG](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/JohnnyTheTank/apiNG?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![npm version](https://badge.fury.io/js/aping-plugin-wikipedia.png)](https://badge.fury.io/js/aping-plugin-wikipedia)
-[![Bower version](https://badge.fury.io/bo/apiNG-plugin-wikipedia.png)](https://badge.fury.io/bo/apiNG-plugin-wikipedia)
+[![npm version](https://badge.fury.io/js/aping-plugin-wikipedia.svg)](https://badge.fury.io/js/aping-plugin-wikipedia)
+[![Bower version](https://badge.fury.io/bo/apiNG-plugin-wikipedia.svg)](https://badge.fury.io/bo/apiNG-plugin-wikipedia)
 
 **_apiNG-plugin-wikipedia_** is a [wikipedia API](https://www.mediawiki.org/wiki/API:Main_page/en) plugin for [**apiNG**](https://github.com/JohnnyTheTank/apiNG).
 
