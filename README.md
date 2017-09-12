@@ -43,7 +43,7 @@ Include `aping-plugin-wikipedia.min.js` in your apiNG application
 <script src="node_modules/aping-plugin-wikipedia/dist/aping-plugin-wikipedia.min.js"></script>
 
 <!-- when using cdn file -->
-<script src="//cdn.jsdelivr.net/aping.plugin-wikipedia/latest/aping-plugin-wikipedia.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aping-plugin-wikipedia@latest/dist/aping-plugin-wikipedia.min.js"></script>
 
 <!-- when using downloaded files -->
 <script src="aping-plugin-wikipedia.min.js"></script>
